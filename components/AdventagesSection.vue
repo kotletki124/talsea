@@ -3,7 +3,7 @@ import { useAuthStore } from "/store";
 import { storeToRefs } from "pinia";
 
 const authStore = useAuthStore();
-const { role, order } = storeToRefs(authStore);
+const { role } = storeToRefs(authStore);
 
 const content = {
   employee: [
@@ -46,6 +46,11 @@ const content = {
       class: "bg-secondary-coral",
     },
   ],
+};
+
+const order = {
+  employee: 0,
+  employer: 1,
 };
 </script>
 

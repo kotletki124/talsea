@@ -3,11 +3,16 @@ import { useAuthStore } from "/store";
 import { storeToRefs } from "pinia";
 
 const authStore = useAuthStore();
-const { role, order } = storeToRefs(authStore);
+const { role } = storeToRefs(authStore);
 
 const header = {
   employee: "Помогаем студентам найти работу в море вакансий",
   employer: "Найдём молодого специалиста в команду",
+};
+
+const order = {
+  employee: 0,
+  employer: 1,
 };
 </script>
 
